@@ -9,11 +9,11 @@ class ItemStatusFilter extends Component {
     return (
       <div className="btn-group"> 
         <button type="button"
-                className="btn btn-info">All</button>
+                className="btn btn-info" onClick={this.onShowAllItems}>All</button>
         <button type="button"
-                className="btn btn-outline-secondary">Active</button>
+                className="btn btn-outline-secondary" onClick={this.onShowActiveItems}>Active</button>
         <button type="button"
-                className="btn btn-outline-secondary">Done</button>
+                className="btn btn-outline-secondary" onClick={this.onShowDoneItems}>Done</button>
       </div>
     )
   } 
